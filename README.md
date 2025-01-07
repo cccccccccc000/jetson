@@ -6,13 +6,25 @@ Nidia Jetson 配置进度以及踩过的坑
 
 ![连接图](pic/jetson.png)
 
-#### 进度
+#### 现状
 
-AGX ORIN Flower get
-Orin NX 1 Flower doing
-Orin NX 2 没救了返厂吧
-TX2 NX 1 健在，还没升级
-TX2 NX 2 升级到顶了。还是太老
+- AGX ORIN Flower get
+- Orin NX 1 Flower get
+- Orin NX 2 Flower get
+- TX2 NX 1 toooo old version
+- TX2 NX 2 too old version
+
+#### 进展
+
+- 新进展：数据集传输成功，superlink连接成功。
+- 新问题：启动训练报错，提示method not found，可能为flower版本不匹配
+- 尝试解决：目前agx的flower可能是1.14，但两台orin nx的确定为1.15，尝试更新agx的版本
+- 新问题：agx的系统版本不支持1.15 flower。
+- 尝试解决：上虚拟机刷机
+- 新进展：已更新，已经装上
+- 新问题：已连接，但跑不起来
+- 新进展：numpy不兼容但无提示，已解决，已经跑起来
+- 待办：看看低版本的其他机器能不能跑
 
 #### 踩过的坑
 
